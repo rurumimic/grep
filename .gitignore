@@ -1,5 +1,5 @@
-# Created by https://www.toptal.com/developers/gitignore/api/vim,tags,emacs,linux,macos,windows,powershell,certificates,visualstudiocode,c++,rust
-# Edit at https://www.toptal.com/developers/gitignore?templates=vim,tags,emacs,linux,macos,windows,powershell,certificates,visualstudiocode,c++,rust
+# Created by https://www.toptal.com/developers/gitignore/api/vim,tags,emacs,linux,macos,windows,powershell,certificates,visualstudiocode,c++,rust,ninja,cmake
+# Edit at https://www.toptal.com/developers/gitignore?templates=vim,tags,emacs,linux,macos,windows,powershell,certificates,visualstudiocode,c++,rust,ninja,cmake
 
 ### C++ ###
 # Prerequisites
@@ -42,6 +42,25 @@
 *.cer
 *.der
 *.priv
+
+### CMake ###
+CMakeLists.txt.user
+CMakeCache.txt
+CMakeFiles
+CMakeScripts
+Testing
+Makefile
+cmake_install.cmake
+install_manifest.txt
+compile_commands.json
+CTestTestfile.cmake
+_deps
+
+### CMake Patch ###
+CMakeUserPresets.json
+
+# External projects
+*-prefix/
 
 ### Emacs ###
 # -*- mode: gitignore; -*-
@@ -140,6 +159,10 @@ Temporary Items
 ### macOS Patch ###
 # iCloud generated files
 *.icloud
+
+### Ninja ###
+.ninja_deps
+.ninja_log
 
 ### PowerShell ###
 # Exclude packaged modules
@@ -246,5 +269,5 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-# End of https://www.toptal.com/developers/gitignore/api/vim,tags,emacs,linux,macos,windows,powershell,certificates,visualstudiocode,c++,rust
+# End of https://www.toptal.com/developers/gitignore/api/vim,tags,emacs,linux,macos,windows,powershell,certificates,visualstudiocode,c++,rust,ninja,cmake
 
